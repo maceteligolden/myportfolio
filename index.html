@@ -1,139 +1,190 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- The boring part! -->
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Mac-Eteli Golden</title>
-    <meta content="Development portfolio of .... " name="description" property="og:description">
-    
-    <!-- Link to the relevant stylesheet -->
-    <link href="style.css" rel="stylesheet">
-    
-    <!--[if lte IE 8]>
-        <link href="dist/css/blockIE.css" rel="stylesheet">
-      <![endif]-->
+<html lang="en">
+<head>
+  <title>Golden</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- Load JQuery, as our little script depends on it -->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css"> <!-- Load our font from Google -->
-    <!-- The JS code block has been moved into the index.js file.  -->
-    <script src="./index.js"></script>
-  </head>
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="assets/img/logo.png" alt="Global">
+    <p>Golden</p>
+  </a>
+  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
 
-  <body>
-    <!-- This calls the little script written above. -->
-    <div class="preloader"></div>
-    <main>
-      <!-- The Intro section begins -->
-      <section class="intro">
-
-        <div class="intro-text"> <!-- Seperates the text section from the arrow. -->
-          <div class="Hi">
-            <h1>Hi! 👋  &mdash; My name is <span>Golden</span>, I'm a <span>Web developer</span> 👨🏻‍💻 with passion for making ideas a reality.</h1> <!-- Insert your text here! -->
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <img src="assets/img/logo.png" alt="Global">
+            <p>Golden</p>
+          </a>
+          <button class="header--cta cta">Hire Us</button>
+          <div class="header--nav-toggle">
+            <span></span>
           </div>
-        </div>
-        
-      </section>
-      <!-- Intro section ends -->
-      
-      <!-- The portfolio section begins -->
-      <section class="projects">
-        <div class="projects-collage">
-          <div class="card">
-            <div class="card-img">
-                <img src="Assets/Heropage.png"/>
-            </div>
-            <div class="card-content">
-              <h3>5thpro - <span>Frontend</span></h3>
-
-              <p>
-                A Waitlist website for a football fantasy startup
-              </p>
-
-              <div>
-                <span class="tags">HTML</span>
-                <span class="tags">CSS</span>
-                <span class="tags">Reactjs</span>
-                <span class="tags">Nextjs</span>
-              </div>
-              <div class="card-footer">
-                <a href="https://5thpro.app" class="center">
-                  <iconify-icon icon="akar-icons:eye" style="color: #616161;"></iconify-icon>
-                  Live Preview</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-                <img src="Assets/sunglo.png"/>
-            </div>
-            <div class="card-content">
-              <h3>Sunglo - <span>FullStack</span></h3>
-
-              <p>
-                A Startup focused on providing cheaper renewable energy
-              </p>
-
-              <div>
-                <span class="tags">HTML</span>
-                <span class="tags">CSS</span>
-                <span class="tags">Typescript</span>
-                <span class="tags">Angular</span>
-                <span class="tags">Nodejs</span>
-              </div>
-              <div class="card-footer">
-                <a href="https://Sunglo.io" class="center">
-                  <iconify-icon icon="akar-icons:eye" style="color: #616161;"></iconify-icon>
-                  Live Preview</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-                <img src="Assets/Termii.png"/>
-            </div>
-            <div class="card-content">
-              <h3>Termii node sdk - <span>Backend</span></h3>
-
-              <p>
-                A Nodejs package for sending emails, sms, voice and whatsapp notifications
-              </p>
-
-              <div>
-                <span class="tags">OpenSource</span>
-                <span class="tags">Typescript</span>
-                <span class="tags">Nodejs</span>
-              </div>
-              <div class="card-footer">
-                <a href="https://github.com/maceteligolden/termiinodejs" class="center">
-                  <iconify-icon icon="akar-icons:github-fill" style="color: #616161;"></iconify-icon>
-                  Source Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Portfolio section ends -->
-      
-      <!-- Footer section begins - If you do not want links here, you can change the <li> items to just be <p> tags or whatever you require -->
-      <footer>
-        <div class="wrapper">
-          <ul>
-            <li>
-              <a href="https://instagram.com/countryside.coder" target="_blank">Instagram</a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/" target="_blank">Linkedin</a>
-            </li>
-            <li>
-                <a href="https://github.com/maceteligolden" target="_blank">GitHub</a>
-              </li>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>About</span></li>
+            <li><span>Works</span></li>
+            <li><span>Contact</span></li>
           </ul>
-        </div>
-      </footer>
-      <!-- Footer section ends -->
-    </main>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Let's work on your project together</h1>
+                <button class="cta">Contact
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="assets/img/introduction-visual.png" alt="Welcome">
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <h2>Interpret my ideas using these technology</h2>
+                <a href="#0">React & Nextjs
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#0">Nodejs & Express
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                <a href="#0">AWS
+                </a>
+                <img src="assets/img/about-visual.png" alt="About Us">
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Selected work</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="https://5thpro.app">
+                      <div class="slider--item-image">
+                        <img src="assets/img/5thpro.jpg" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">5thpro.app</p>
+                      <p class="slider--item-description">FRONTEND</p>
+                      <p class="slider--item-description">An online platform for earning from fantasy football</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="https://sunglo.io">
+                      <div class="slider--item-image">
+                        <img src="assets/img/sunglo.jpg" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">Sunglo.io</p>
+                      <p class="slider--item-description">FULL STACK</p>
+                      <p class="slider--item-description">An online platform for earning and providing power to african businesses</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="https://www.npmjs.com/package/@goldenmaceteli/termiinodejs">
+                      <div class="slider--item-image">
+                        <img src="assets/img/npm.jpg" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Termi Node SDK</p>
+                      <p class="slider--item-description">A nodejs wrapper for a Nigerian messaging service</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Alloy</p>
+                      <p class="slider--item-description">BACKEND</p>
+                      <p class="slider--item-description">An iOS application that let's users split bills with friends and family</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <p>Lagos, Nigeria</p>
+                    <a href="mailto:benjaminambrose99@gmail.com">benjaminambrose99@gmail.com</a>
+                    <a href="tel:+148126287560">+2347016181313</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="https://github.com/maceteligolden">Github</a></li>
+                    <li><a href="https://medium.com/@benjaminambrose99">Medium</a></li>
+                    <li><a href="mailto:benjaminambrose99@gmail.com">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>About</li>
+    <li>Works</li>
+    <li>Contact</li>
+  </ul>
+</div>
 
-  </body>
-  <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.2/iconify-icon.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+</body>
 </html>
